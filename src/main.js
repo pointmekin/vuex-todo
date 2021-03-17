@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import store from './store/index'
 
-createApp(App).mount('#app')
+// put .use(store) to let Vue utilize the store that you created
+createApp(App).use(store).mount('#app')
